@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="GuardXFSample.Views.RegisterPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="Center">
+                <Entry Placeholder="First Name"
+                       Text="{Binding FirstName}"/>
+
+                <Entry Placeholder="Last Name"
+                       Text="{Binding LastName}"/>
+
+                <Entry Placeholder="Email"
+                       Text="{Binding Email}"
+                       Keyboard="Email"/>
+
+                 <Entry Placeholder="Age"
+                       Text="{Binding Age}"
+                       Keyboard="Numeric"/>
+
+                <Button Text="Create"
+                        Command="{Binding CreateUserCommand}"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
